@@ -10,5 +10,5 @@ EXPORT pep := Module
         STRING Data_Fim_Exercicio;
         STRING Data_Fim_Carencia;
 		END;
-	EXPORT File := DATASET('~class::project::pep::202205_pep.csv', layout, CSV(heading(1)));
+	EXPORT File := DATASET('~class::pfbo::pep::202206_pep.csv', layout, CSV(heading(1)));
 END;
