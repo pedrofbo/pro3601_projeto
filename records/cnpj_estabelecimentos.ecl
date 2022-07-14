@@ -30,6 +30,5 @@ EXPORT cnpj_estabelecimentos := Module
         STRING correio_eletronico;
         STRING situacao_especial;
         STRING data_situacao_especial;
-		END;
-	EXPORT File := DATASET('~class::project::cnpj::estabelecimentos::k3241.k03200y0.d20514.estabele', layout, CSV);
+	END;
 END;

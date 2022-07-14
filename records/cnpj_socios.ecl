@@ -11,6 +11,5 @@ EXPORT cnpj_socios := Module
         STRING nome_representante;
         STRING qualificacao_representante;
         STRING faixa_etaria;
-		END;
-	EXPORT File := DATASET('~class::project::cnpj::socios::k3241.k03200y0.d20514.sociocsv', layout, CSV);
+	END;
 END;

@@ -1,4 +1,4 @@
-EXPORT cpfg := Module
+EXPORT cpgf := Module
 	EXPORT layout := Record
 		STRING CODIGO_ORGAO_SUPERIOR;
         STRING NOME_ORGAO_SUPERIOR;
@@ -16,5 +16,5 @@ EXPORT cpfg := Module
         STRING DATA_TRANSACAO;
         STRING VALOR_TRANSACAO;
 		END;
-	EXPORT File := DATASET('~class::project::cpgf::202205_cpgf.csv', layout, CSV(heading(1)));
+	EXPORT File := DATASET('~class::pfbo::cpgf::cpgf_2013_2022.csv', layout, CSV(heading(1)));
 END;
