@@ -1,0 +1,34 @@
+EXPORT cnpj_estabelecimentos := Module
+	EXPORT layout := Record
+		STRING8 cnpj_basico;
+        STRING4 cnpj_ordem;
+        STRING2 cnpj_dv;
+        UNSIGNED1 matriz_filial;
+        STRING nome_fantasia;
+        STRING2 situacao_cadastral;
+        UNSIGNED4 data_situacao_cadastral;
+        STRING2 motivo_situacao_cadastral;
+        STRING nome_cidade_exterior;
+        STRING3 pais;
+        UNSIGNED4 data_inicio_atividade;
+        STRING7 cnae_fiscal_principal;
+        STRING cnae_fiscal_secundaria;
+        STRING tipo_logradouro;
+        STRING logradouro;
+        STRING6 numero;
+        STRING complemento;
+        STRING bairro;
+        STRING8 cep;
+        STRING2 uf;
+        STRING4 municipio;
+        STRING4 ddd_1;
+        STRING8 telefone_1;
+        STRING4 ddd_2;
+        STRING8 telefone_2;
+        STRING4 ddd_fax;
+        STRING8 fax_1;
+        STRING correio_eletronico;
+        STRING situacao_especial;
+        UNSIGNED4 data_situacao_especial;
+	END;
+END;
