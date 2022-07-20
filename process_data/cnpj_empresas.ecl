@@ -14,11 +14,15 @@ END;
 
 processed_layout MyTransf(layout Le) := TRANSFORM
   SELF.capital_social_empresa := (REAL)STD.Str.FindReplace(Le.capital_social_empresa, ',', '.');
+  SELF.porte_empresa := IF(
+    Le.porte_empresa <> '',
+    Le.porte_empresa,
+    '00'
+  );
   SELF := Le;
 END;
 
 e2 := PROJECT(empresas, MyTransf(LEFT));
 
 e3 := e2(razao_social <> '');
-e4 := e3(porte_empresa <> '');
-e4 : PERSIST('~class::pfbo::cnpj::empresas_processed');
+e3 : PERSIST('~class::pfbo::cnpj::empresas_processed');

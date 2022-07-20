@@ -9,7 +9,7 @@ estabelecimentos := DATASET('~class::pfbo::cnpj::estabelecimentos_concatenated__
 estabelecimentos : PERSIST('~class::pfbo::cnpj::estabelecimentos_optimized');
 
 layout_cnpj_socios := optimized_records.cnpj_socios.layout;
-socios := DATASET('~class::pfbo::cnpj::socios_concatenated__p3503854759', layout_cnpj_estabelecimentos, FLAT);
+socios := DATASET('~class::pfbo::cnpj::socios_concatenated__p3503854759', layout_cnpj_socios, FLAT);
 socios : PERSIST('~class::pfbo::cnpj::socios_optimized');
 
 layout_cpgf := optimized_records.cpgf.layout;
