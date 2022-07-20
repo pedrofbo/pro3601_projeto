@@ -8,4 +8,5 @@ EXPORT cnpj_empresas := Module
         STRING2 porte_empresa;
         STRING ente_federativo_responsavel;
 	END;
+    EXPORT File := DATASET('~class::pfbo::cnpj::empresas_optimized__p1773485739', layout, FLAT);
 END;
