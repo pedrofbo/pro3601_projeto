@@ -12,4 +12,5 @@ EXPORT cnpj_socios := Module
         STRING2 qualificacao_representante;
         UNSIGNED1 faixa_etaria;
 	END;
+    EXPORT File := DATASET('~class::pfbo::cnpj::socios_optimized__p64863730', layout, FLAT);
 END;
