@@ -2,8 +2,8 @@ EXPORT cpgf := Module
 	EXPORT layout := Record
 		UNSIGNED3 codigo_orgao_superior;
         STRING nome_orgao_superior;
-        UNSIGNED3 codigo_orgao;
-        STRING nome_orgao;
+        UNSIGNED3 codigo_orgao_subordinado;
+        STRING nome_orgao_subordinado;
         UNSIGNED3 codigo_unidade_gestora;
         STRING nome_unidade_gestora;
         UNSIGNED2 ano_extrato;
